@@ -20,6 +20,7 @@
 		429277A4198F391500E19641 /* CreateStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429277A3198F391500E19641 /* CreateStatusViewController.swift */; };
 		429277A6198F392800E19641 /* CreatePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429277A5198F392800E19641 /* CreatePhotoViewController.swift */; };
 		429277A8198F393500E19641 /* CreateCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429277A7198F393500E19641 /* CreateCheckinViewController.swift */; };
+		49E7E4521C8CB50B00DF0299 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7E4511C8CB50B00DF0299 /* PhotoViewController.swift */; };
 		C9C00E241C69677600FC6F69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C00E231C69677600FC6F69 /* LoginViewController.swift */; };
 		C9C00E261C6967A900FC6F69 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C00E251C6967A900FC6F69 /* Common.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		429277A3198F391500E19641 /* CreateStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStatusViewController.swift; sourceTree = "<group>"; };
 		429277A5198F392800E19641 /* CreatePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePhotoViewController.swift; sourceTree = "<group>"; };
 		429277A7198F393500E19641 /* CreateCheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCheckinViewController.swift; sourceTree = "<group>"; };
+		49E7E4511C8CB50B00DF0299 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		C9C00E231C69677600FC6F69 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C9C00E251C6967A900FC6F69 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 				42167674198EAAC6008CCBC3 /* View Controllers */,
 				42167655198E3220008CCBC3 /* AppDelegate.swift */,
 				42167659198E3220008CCBC3 /* Main.storyboard */,
+				49E7E4511C8CB50B00DF0299 /* PhotoViewController.swift */,
 				C9C00E231C69677600FC6F69 /* LoginViewController.swift */,
 				C9C00E251C6967A900FC6F69 /* Common.swift */,
 				4216765C198E3220008CCBC3 /* Images.xcassets */,
@@ -260,6 +263,7 @@
 				42167673198EAABC008CCBC3 /* SettingsViewController.swift in Sources */,
 				4216767A198ECE88008CCBC3 /* NewsFeedViewController.swift in Sources */,
 				C9C00E241C69677600FC6F69 /* LoginViewController.swift in Sources */,
+				49E7E4521C8CB50B00DF0299 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
