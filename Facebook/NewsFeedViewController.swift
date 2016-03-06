@@ -36,7 +36,7 @@ class NewsFeedViewController: UIViewController {
     }
     
     @IBAction func onPhotoTap(sender: UITapGestureRecognizer) {
-        print("tapped \(sender.view)")
+//        print("tapped \(sender.view)")
         image = sender.view as! UIImageView
         performSegueWithIdentifier("BigPhotoSegue", sender: self)
     }

@@ -10,14 +10,19 @@ import UIKit
 
 class PhotoViewController: UIViewController {
 
+    @IBOutlet weak var doneButton: UIButton!
     var image: UIImage!
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var photoScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
+//        doneButton.backgroundColor = UIColor.clearColor()
+        doneButton.layer.cornerRadius = 5
+        doneButton.layer.borderWidth = 1
+        doneButton.layer.borderColor = UIColor.whiteColor().CGColor
+        
         photoView.image = image
         photoScrollView.frame.size = CGSize(width: 320, height: 568)
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
