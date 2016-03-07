@@ -27,7 +27,7 @@ class PhotoTransition: BaseTransition {
         var photoViewController = fromViewController as! PhotoViewController
         
         photoViewController.photoView.frame = CGRect(x: 0, y: 0, width: 320, height: 568)
-        photoViewController.photoScrollView.backgroundColor = UIColor(white: 0, alpha: 1)
+        photoViewController.photoScrollView.backgroundColor = UIColor(white: 0, alpha: alpha)
         UIView.animateWithDuration(duration, animations: {
             photoViewController.photoView.frame = initialImageSize
             photoViewController.photoView.frame.origin.y += initialY

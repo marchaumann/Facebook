@@ -8,6 +8,8 @@
 
 import UIKit
 
+var alpha: CGFloat! = 1
+
 class PhotoViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var doneButton: UIButton!
@@ -24,7 +26,8 @@ class PhotoViewController: UIViewController, UIScrollViewDelegate {
         photoScrollView.delegate = self
         
         photoView.image = image
-        photoScrollView.contentSize = CGSize(width: 320, height: 569)
+//        photoScrollView.contentSize = CGSize(width: 320, height: 568)
+        photoScrollView.alwaysBounceVertical = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,8 +40,8 @@ class PhotoViewController: UIViewController, UIScrollViewDelegate {
     }
 
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        print(scrollView.contentOffset)
-        let alpha = convertValue(abs(scrollView.contentOffset.y), r1Min: 0, r1Max: 80, r2Min: 1, r2Max: 0)
+        print(alpha)
+        alpha = convertValue(abs(scrollView.contentOffset.y), r1Min: 0, r1Max: 80, r2Min: 1, r2Max: 0)
         photoScrollView.backgroundColor = UIColor(white: 0, alpha: alpha)
         // This method is called as the user scrolls
     }
@@ -49,6 +52,9 @@ class PhotoViewController: UIViewController, UIScrollViewDelegate {
     
     func scrollViewDidEndDragging(scrollView: UIScrollView,
         willDecelerate decelerate: Bool) {
+            if abs(scrollView.contentOffset.y) > 60 {
+                dismissViewControllerAnimated(true, completion: nil)
+            }
             // This method is called right as the user lifts their finger
     }
     
