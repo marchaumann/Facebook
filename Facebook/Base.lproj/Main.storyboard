@@ -121,20 +121,21 @@
         <!--Photo View Controller-->
         <scene sceneID="CZU-oL-1Bk">
             <objects>
-                <viewController storyboardIdentifier="PhotoViewController" id="tEl-yR-8sr" customClass="PhotoViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oaF-4k-CQG">
+                <viewController storyboardIdentifier="PhotoViewController" modalPresentationStyle="overCurrentContext" id="tEl-yR-8sr" customClass="PhotoViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="oaF-4k-CQG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" id="IEo-9t-U4z">
-                                <rect key="frame" x="0.0" y="54" width="320" height="470"/>
+                            <scrollView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="3" id="IEo-9t-U4z">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="J3i-d3-MfO">
-                                        <rect key="frame" x="0.0" y="-54" width="320" height="568"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NTO-XF-BeS">
                                 <rect key="frame" x="251" y="22" width="58" height="27"/>
@@ -152,7 +153,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="doneButton" destination="NTO-XF-BeS" id="dee-p2-rRA"/>
@@ -277,7 +278,6 @@
                     <navigationItem key="navigationItem" id="m9U-cv-OHe"/>
                     <connections>
                         <outlet property="feedImageView" destination="BFk-jQ-UCW" id="FKQ-21-8kr"/>
-                        <outlet property="image" destination="7ec-EZ-TJ4" id="no2-WS-cTz"/>
                         <outlet property="scrollView" destination="YZ6-vp-O3X" id="Pgj-Be-1bK"/>
                         <segue destination="tEl-yR-8sr" kind="modal" identifier="BigPhotoSegue" id="xbJ-hN-QaI"/>
                     </connections>

@@ -8,8 +8,8 @@
 
 import UIKit
 
-class PhotoViewController: UIViewController {
-
+class PhotoViewController: UIViewController, UIScrollViewDelegate {
+    
     @IBOutlet weak var doneButton: UIButton!
     var image: UIImage!
     @IBOutlet weak var photoView: UIImageView!
@@ -21,8 +21,10 @@ class PhotoViewController: UIViewController {
         doneButton.layer.borderWidth = 1
         doneButton.layer.borderColor = UIColor.whiteColor().CGColor
         
+        photoScrollView.delegate = self
+        
         photoView.image = image
-        photoScrollView.frame.size = CGSize(width: 320, height: 568)
+        photoScrollView.contentSize = CGSize(width: 320, height: 569)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +36,29 @@ class PhotoViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        print(scrollView.contentOffset)
+        let alpha = convertValue(abs(scrollView.contentOffset.y), r1Min: 0, r1Max: 80, r2Min: 1, r2Max: 0)
+        photoScrollView.backgroundColor = UIColor(white: 0, alpha: alpha)
+        // This method is called as the user scrolls
+    }
+    
+    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        
+    }
+    
+    func scrollViewDidEndDragging(scrollView: UIScrollView,
+        willDecelerate decelerate: Bool) {
+            // This method is called right as the user lifts their finger
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        // This method is called when the scrollview finally stops scrolling.
+    }
+    
+    func viewForZoomingInScrollView(scrollView: UIScrollView!) -> UIView! {
+        return photoView
+    }
     /*
     // MARK: - Navigation
 

@@ -21,6 +21,8 @@
 		429277A6198F392800E19641 /* CreatePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429277A5198F392800E19641 /* CreatePhotoViewController.swift */; };
 		429277A8198F393500E19641 /* CreateCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429277A7198F393500E19641 /* CreateCheckinViewController.swift */; };
 		49E7E4521C8CB50B00DF0299 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E7E4511C8CB50B00DF0299 /* PhotoViewController.swift */; };
+		C946EEB21C8D3FD900C1EDAA /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946EEB01C8D3FD900C1EDAA /* BaseTransition.swift */; };
+		C946EEB31C8D3FD900C1EDAA /* PhotoTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C946EEB11C8D3FD900C1EDAA /* PhotoTransition.swift */; };
 		C9C00E241C69677600FC6F69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C00E231C69677600FC6F69 /* LoginViewController.swift */; };
 		C9C00E261C6967A900FC6F69 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C00E251C6967A900FC6F69 /* Common.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		429277A5198F392800E19641 /* CreatePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePhotoViewController.swift; sourceTree = "<group>"; };
 		429277A7198F393500E19641 /* CreateCheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCheckinViewController.swift; sourceTree = "<group>"; };
 		49E7E4511C8CB50B00DF0299 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		C946EEB01C8D3FD900C1EDAA /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		C946EEB11C8D3FD900C1EDAA /* PhotoTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTransition.swift; sourceTree = "<group>"; };
 		C9C00E231C69677600FC6F69 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C9C00E251C6967A900FC6F69 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +107,8 @@
 				49E7E4511C8CB50B00DF0299 /* PhotoViewController.swift */,
 				C9C00E231C69677600FC6F69 /* LoginViewController.swift */,
 				C9C00E251C6967A900FC6F69 /* Common.swift */,
+				C946EEB01C8D3FD900C1EDAA /* BaseTransition.swift */,
+				C946EEB11C8D3FD900C1EDAA /* PhotoTransition.swift */,
 				4216765C198E3220008CCBC3 /* Images.xcassets */,
 				42167653198E3220008CCBC3 /* Supporting Files */,
 			);
@@ -252,8 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				429277A0198F068E00E19641 /* StoryViewController.swift in Sources */,
+				C946EEB31C8D3FD900C1EDAA /* PhotoTransition.swift in Sources */,
 				429277A2198F35B600E19641 /* MessagesViewController.swift in Sources */,
 				42167676198ECA7C008CCBC3 /* NotificationsViewController.swift in Sources */,
+				C946EEB21C8D3FD900C1EDAA /* BaseTransition.swift in Sources */,
 				42167656198E3220008CCBC3 /* AppDelegate.swift in Sources */,
 				C9C00E261C6967A900FC6F69 /* Common.swift in Sources */,
 				429277A6198F392800E19641 /* CreatePhotoViewController.swift in Sources */,

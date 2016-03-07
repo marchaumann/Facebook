@@ -8,11 +8,16 @@
 
 import UIKit
 
+var initialImageSize: CGRect!
+var initialY: CGFloat! = 110
+
 class NewsFeedViewController: UIViewController {
 
+    var modalTransition = PhotoTransition()
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var feedImageView: UIImageView!
-    var image: UIImageView!
+    var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,12 +42,16 @@ class NewsFeedViewController: UIViewController {
     
     @IBAction func onPhotoTap(sender: UITapGestureRecognizer) {
 //        print("tapped \(sender.view)")
-        image = sender.view as! UIImageView
+        imageView = sender.view as! UIImageView
         performSegueWithIdentifier("BigPhotoSegue", sender: self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
         var destinationViewController = segue.destinationViewController as! PhotoViewController
-        destinationViewController.image = self.image.image
+        destinationViewController.image = self.imageView.image
+        initialImageSize = self.imageView.frame
+        destinationViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+        destinationViewController.transitioningDelegate = modalTransition
+        modalTransition.duration = 0.4
     }
 }
